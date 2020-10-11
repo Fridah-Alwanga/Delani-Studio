@@ -1,6 +1,14 @@
 body {
     overflow-x: hidden;
 }
+#home {
+    background-image: url("./images/h_img.jpg");
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    padding-top: 10px;
+    color: aliceblue;
+}
 #services{
     background-image: url("./images/s_image.jpg");
     background-size: cover;
@@ -8,4 +16,7 @@ body {
     padding: 10rem;
     margin-bottom:40px;
     color: white;
+}
+body{
+    text-align: center;
 }
