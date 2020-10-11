@@ -1,3 +1,11 @@
 body {
     overflow-x: hidden;
 }
+#services{
+    background-image: url("./images/s_image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10rem;
+    margin-bottom:40px;
+    color: white;
+}
