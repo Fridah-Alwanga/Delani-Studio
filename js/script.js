@@ -1,58 +1,99 @@
-$('document').ready(function () {
-    $('#design-image').click(function () {
-        $('#design-image').hide('2000');
-        $('#design').show('2000');
-    })
-    $('#design').click(function () {
-        $('#design').hide('2000');
-        $('#design-image').show('2000');
-    })
-    $('#dev-image').click(function () {
-        $('#dev-image').hide('2000');
-        $('#dev').show('2000');
-    })
-    $('#dev').click(function () {
-        $('#dev').hide('2000');
-        $('#dev-image').show('2000');
-    })
-    $('#product-image').click(function () {
-        $('#product-image').hide('2000');
-        $('#product').show('2000');
-    })
-    $('#product').click(function () {
-        $('#product').hide('2000');
-        $('#product-image').show('2000');
-    })
-    // portfolio section
-    $("#work4").hover(function () {
-        $("#mouse-hover1").toggle();
+$(document).ready(function() {
+    $(".designco").click(function() {
+        $(".designco").slideDown('1400').hide('1000');
+        $(".paragraph1").show('1400');
     });
-    $("#work3").hover(function () {
-        $("#mouse-hover2").toggle();
+    $(".paragraph1").click(function() {
+        $(".paragraph1").slideUp('1400');
+        $(".designco").slideDown('1400');
     });
-    $("#work2").hover(function () {
-        $("#mouse-hover3").toggle();
-    });
-    $("#work1").hover(function () {
-        $("#mouse-hover4").toggle();
-    });
-    $("#work5").hover(function () {
-        $("#mouse-hover5").toggle();
-    });
-    $("#work6").hover(function () {
-        $("#mouse-hover6").toggle();
-    });
-    $("#work7").hover(function () {
-        $("#mouse-hover7").toggle();
-    });
-    $("#work8").hover(function () {
-        $("#mouse-hover8").toggle();
-    });
-
-    // 
-    $('form#form1').submit(function(e){
-    var name=$('#mce-NAME').val();
-    e.preventDefault();
-    alert('Hello! ' + name + ' Thank you for reaching out,will get back to you as soon as possible');
-    })
 });
+
+$(document).ready(function() {
+    $(".devco").click(function() {
+        $(".devco").slideDown('1400').hide('1000');
+        $(".paragraph2").show('1400');
+    });
+    $(".paragraph2").click(function() {
+        $(".paragraph2").slideUp('1400');
+        $(".devco").slideDown('1400');
+    });
+});
+
+$(document).ready(function() {
+    $(".proco").click(function() {
+        $(".proco").slideDown('1400').hide('1000');
+        $(".paragraph3").show('1400');
+    });
+    $(".paragraph3").click(function() {
+        $(".paragraph3").slideUp('1400');
+        $(".proco").slideDown('1400');
+    });
+});
+
+$(document).ready(function(){
+    $(".asset4").mouseover(function(){
+        $(".work4").show();
+    }).mouseout(function(){
+        $(".work4").hide();
+    });
+});
+$(document).ready(function(){
+    $(".asset3").mouseover(function(){
+        $(".work3").show();
+    }).mouseout(function(){
+        $(".work3").hide();
+    });
+});
+$(document).ready(function(){
+    $(".asset2").mouseover(function(){
+        $(".work2").show();
+    }).mouseout(function(){
+        $(".work2").hide();
+    });
+});
+$(document).ready(function(){
+    $(".asset1").mouseover(function(){
+        $(".work1").show();
+    }).mouseout(function(){
+        $(".work1").hide();
+    });
+});
+$(document).ready(function(){
+    $(".asset5").mouseover(function(){
+        $(".work5").show();
+    }).mouseout(function(){
+        $(".work5").hide();
+    });
+});
+$(document).ready(function(){
+    $(".asset6").mouseover(function(){
+        $(".work6").show();
+    }).mouseout(function(){
+        $(".work6").hide();
+    });
+});
+$(document).ready(function(){
+    $(".asset7").mouseover(function(){
+        $(".work7").show();
+    }).mouseout(function(){
+        $(".work7").hide();
+    });
+});
+$(document).ready(function(){
+    $(".asset8").mouseover(function(){
+        $(".work8").show();
+    }).mouseout(function(){
+        $(".work8").hide();
+    });
+});
+
+function myFunction(){
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+    if (name == "" || email == "" || message == ""){
+    alert ("Please enter your name, email and add a commment!");
+    }
+    else alert( name + " ,thanks for your reply.");
+    }
