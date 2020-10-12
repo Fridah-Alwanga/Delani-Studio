@@ -26,7 +26,7 @@ Incase of any feedback you can reach me though: fridahalwanga6@gmail.com
 User required to enters invalid name and email in the form also she or he is required to enters text in the message text area
 
 # Demo
-Here is a working live demo :
+Here is a working live demo :https://fridah-alwanga.github.io/Delani-Studio/
 
 # License
 MIT © @FridahAlwanga
