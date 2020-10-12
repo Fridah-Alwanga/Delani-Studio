@@ -1,99 +1,101 @@
-$(document).ready(function() {
-    $(".designco").click(function() {
-        $(".designco").slideDown('1400').hide('1000');
-        $(".paragraph1").show('1400');
+$(document).ready(function(){
+    $(".development").click(function(){
+      $(".development").slideDown('1500').hide('1000');
+      $(".development-content").show('1500');
     });
-    $(".paragraph1").click(function() {
-        $(".paragraph1").slideUp('1400');
-        $(".designco").slideDown('1400');
+    $(".development-content").click(function(){
+      $(".development-content").slideUp('1500');
+      $(".development").slideDown('1500');
     });
-});
+  });
+  
+  $(document).ready(function() {
+    $(".design").click(function() {
+      $(".design").slideDown('1500').hide('1000');
+      $(".design-content").show('1500');
+    });
 
-$(document).ready(function() {
-    $(".devco").click(function() {
-        $(".devco").slideDown('1400').hide('1000');
-        $(".paragraph2").show('1400');
+    $(".design-content").click(function() {
+      $(".design-content").slideUp('1500');
+      $(".design").slideDown('1500');
     });
-    $(".paragraph2").click(function() {
-        $(".paragraph2").slideUp('1400');
-        $(".devco").slideDown('1400');
-    });
-});
+  });
 
-$(document).ready(function() {
-    $(".proco").click(function() {
-        $(".proco").slideDown('1400').hide('1000');
-        $(".paragraph3").show('1400');
+  $(document).ready(function() {
+    $(".managment").click(function() {
+      $(".managment").slideDown('1500').hide('1000');
+      $(".managment-content").show('1500');
     });
-    $(".paragraph3").click(function() {
-        $(".paragraph3").slideUp('1400');
-        $(".proco").slideDown('1400');
+    $(".managment-content").click(function() {
+      $(".managment-content").slideUp('1500');
+      $(".managment").slideDown('1500');
     });
-});
-
-$(document).ready(function(){
-    $(".asset4").mouseover(function(){
-        $(".work4").show();
+  });
+  $(document).ready(function(){
+    $(".wrk1").mouseover(function(){
+      $(".par").show();
     }).mouseout(function(){
-        $(".work4").hide();
+      $(".par").hide();
     });
-});
-$(document).ready(function(){
-    $(".asset3").mouseover(function(){
-        $(".work3").show();
+  });
+  $(document).ready(function(){
+    $(".wrk2").mouseover(function(){
+      $(".par2").show();
     }).mouseout(function(){
-        $(".work3").hide();
+      $(".par2").hide();
     });
-});
-$(document).ready(function(){
-    $(".asset2").mouseover(function(){
-        $(".work2").show();
+  });
+  $(document).ready(function(){
+    $(".wrk3").mouseover(function(){
+      $(".par3").show();
     }).mouseout(function(){
-        $(".work2").hide();
+      $(".par3").hide();
     });
-});
-$(document).ready(function(){
-    $(".asset1").mouseover(function(){
-        $(".work1").show();
+  });
+  $(document).ready(function(){
+    $(".wrk4").mouseover(function(){
+      $(".par4").show();
     }).mouseout(function(){
-        $(".work1").hide();
+      $(".par4").hide();
     });
-});
-$(document).ready(function(){
-    $(".asset5").mouseover(function(){
-        $(".work5").show();
+  });
+  
+  $(document).ready(function(){
+    $(".wrk5").mouseover(function(){
+      $(".par5").show();
     }).mouseout(function(){
-        $(".work5").hide();
+      $(".par5").hide();
     });
-});
-$(document).ready(function(){
-    $(".asset6").mouseover(function(){
-        $(".work6").show();
+    $(".wrk6").mouseover(function(){
+      $(".par6").show();
     }).mouseout(function(){
-        $(".work6").hide();
+      $(".par6").hide();
     });
-});
-$(document).ready(function(){
-    $(".asset7").mouseover(function(){
-        $(".work7").show();
+    $(".wrk7").mouseover(function(){
+      $(".par7").show();
     }).mouseout(function(){
-        $(".work7").hide();
+      $(".par7").hide();
     });
-});
-$(document).ready(function(){
-    $(".asset8").mouseover(function(){
-        $(".work8").show();
+    $(".wrk8").mouseover(function(){
+      $(".par8").show();
     }).mouseout(function(){
-        $(".work8").hide();
+      $(".par8").hide();
     });
-});
-
-function myFunction(){
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var message = document.getElementById("message").value;
-    if (name == "" || email == "" || message == ""){
-    alert ("Please enter your name, email and add a commment!");
-    }
-    else alert( name + " ,thanks for your reply.");
-    }
+  });
+  
+  $(document).ready(function(){
+    $("form#form34A").submit(function(event){
+       event.preventDefault();
+      var name = $("input#MERGE1").val();
+      var email = $("input#MERGE0").val();
+      var message = $("textarea#comment").val();
+      if ($("input#MERGE1").val() && $("input#MERGE0").val()){
+        alert (name + ", your messeges has been received successfully. Thank you for reaching out to us.");
+      }
+      else {
+        alert("Please input your name email address and message!");
+      }
+      
+    });
+  
+  });
